@@ -1,0 +1,11 @@
+<div class="projects" data-ng-controller="ProjectsCtrl">
+    <h1 class="heading--primary">Projects</h1>
+    
+    <div data-ui-view></div>
+
+    <ul>
+        <li class="project" data-ng-repeat="project in projects">
+            <project project-info="project" />
+        </li>
+    </ul>
+</div>

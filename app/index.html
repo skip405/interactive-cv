@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body data-ng-app="cvApp">
+        <header role="banner">
+            <div class="width">
+                <nav>
+                    <ul class="nav" ng-controller="cvNavCtrl">
+                        <li ng-class="navClass('home')" class="nav__item"><a data-ui-sref="main">Home</a></li>
+                        <li ng-class="navClass('about')" class="nav__item"><a data-ui-sref="about">About me</a></li>
+                        <li ng-class="navClass('contact')" class="nav__item"><a data-ui-sref="contact">Contact</a></li>
+                        <li ng-class="navClass('projects')" class="nav__item"><a data-ui-sref="projects">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main role="main">
+            <div class="width">
+                <div class="cv" data-ui-view></div>
+            </div>
+        </main>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-resource/angular-resource.js"></script>
+        <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../bower_components/angular-touch/angular-touch.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/projects.js"></script>
+        <script src="scripts/controllers/technologies.js"></script>
+        <script src="scripts/controllers/navigation.js"></script>
+        <script src="scripts/services/projects.js"></script>
+        <script src="scripts/directives/project.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

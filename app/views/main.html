@@ -1,0 +1,9 @@
+<div class="main" data-ng-controller="MainCtrl">
+    <h1 class="heading--primary">Welcome</h1>
+    <p>to my interactive CV. You may navigate around it using the menu on the top. Also you can get a generated <a href="#">PDF version</a> of it, or add it to your <a href="#">Google Drive</a> or <a href="#">Dropbox</a>.</p>
+    <p>Those interested in the technical details may <button type="button" ng-click="toggleTechDetails()">unhide</button> the following block.</p>
+
+    <div ng-show="showTech" class="tech-details">
+        <p>This interactive CV is made using AngularJS, and Yeoman. You are watching a production version, the development version is on Github, feel free to have a look at the source code and leave feedback.</p>
+    </div>
+</div>

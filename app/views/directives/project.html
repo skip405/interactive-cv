@@ -1,0 +1,8 @@
+<div class="project project--excerpt">
+    <h2 class="title title--project"><a data-ng-href="#projects/{{project.slug}}">{{project.title}}</a></h2>
+    <span>{{project.date}}</span>
+    <span><a data-ng-href="{{project.company.url}}">{{project.company.name}}</a></span>
+    <ul class="project__technologies">
+        <li data-ng-repeat="tag in project.technologies"><a data-ng-href="#/technologies/{{tag}}">{{tag}}</a></li>
+    </ul>
+</div>
